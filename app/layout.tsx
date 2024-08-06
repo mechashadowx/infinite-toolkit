@@ -16,6 +16,9 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en" className="bg-[#F0F0F0]">
+            <head>
+                <link rel="icon" href="/infinite-toolkit/favicon.svg" />
+            </head>
             <body className={montserrat.className}>{children}</body>
         </html>
     );
