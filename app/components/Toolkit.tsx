@@ -32,7 +32,7 @@ const Toolkit: React.FC<ToolkitProps> = ({ items }) => {
                 {items.concat(items).map((item, index) => (
                     <div
                         key={index}
-                        className="p-4 bg-[#F0F0F0] text-[#FF4D40] text-3xl font-black text-center cursor-default hover:font-bold transition-all duration-300"
+                        className="p-2 sm:p-3 lg:p-4 text-[#FF4D40] text-xl sm:text-2xl lg:text-3xl font-black text-center cursor-default hover:font-bold transition-all duration-300"
                     >
                         {item}
                     </div>

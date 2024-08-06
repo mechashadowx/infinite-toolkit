@@ -41,13 +41,13 @@ export default function Header() {
             <div className="flex flex-col items-center gap-4 w-full">
                 <a
                     href="https://mechashadow.gumroad.com/l/InfiniteToolkit"
-                    className="w-full sm:w-auto px-6 py-3 bg-gradient-to-r from-[#D92A1C] to-[#FF4D40] text-[#F0F0F0] font-bold rounded-full hover:from-[#C02518] hover:to-[#E63C30] transition-all duration-300 shadow-lg text-center min-w-[250px] transform hover:scale-105"
+                    className="w-full sm:w-auto px-6 py-3 bg-gradient-to-r from-[#D92A1C] to-[#FF4D40] text-[#F0F0F0] font-bold rounded-xl hover:from-[#C02518] hover:to-[#E63C30] transition-all duration-300 shadow-lg text-center min-w-[250px] transform hover:scale-105"
                 >
                     Get Premium License -{" "}
                     <span className="text-xl font-black">$4.99</span> Lifetime
                     Access
                 </a>
-                <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
+                <div className="w-full sm:w-auto flex flex-col sm:flex-row justify-center items-center gap-4">
                     <a
                         href="https://chromewebstore.google.com/detail/infinite-toolkit/iocbmkenbdeolfklibfpokdojgffnkdb"
                         className="w-full sm:w-auto px-6 py-3 bg-blue-600 text-[#F0F0F0] font-semibold rounded-xl hover:bg-blue-700 transition-colors duration-300 shadow-lg text-center min-w-[210px]"
