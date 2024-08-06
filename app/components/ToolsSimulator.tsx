@@ -71,7 +71,6 @@ export default function ToolsSimulator() {
                 </div>
             </div>
             {images[selectedTool]}
-            <div className="h-96"></div>
         </>
     );
 }
