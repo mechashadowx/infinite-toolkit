@@ -33,7 +33,7 @@ export default function ToolsSimulator() {
         acc[tool] = (
             <Image
                 key={tool}
-                src={`/Infinite Toolkit/tools/${tool}.png`}
+                src={`/infinite-toolkit/tools/${tool}.png`}
                 alt={`${tool} image`}
                 width={1000}
                 height={1000}
