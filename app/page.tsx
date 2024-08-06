@@ -8,7 +8,7 @@ export default function Home() {
             <ToolsSimulator />
             <div className="h-24"></div>
             <footer className="h-20 w-full bg-[#181818] flex items-center justify-center text-[#F0F0F0]">
-                <a className="text-lg" href="https://x.com/MechashadowX">
+                <a className="text-lg hover:font-bold transition-all duration-300" href="https://x.com/MechashadowX">
                     MechashadowX
                 </a>
             </footer>
