@@ -1,12 +1,18 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChrome, faFirefoxBrowser } from "@fortawesome/free-brands-svg-icons";
 import { faAngleDoubleRight } from "@fortawesome/free-solid-svg-icons";
+import Base64Decoder from "./components/tools/Base64Decoder";
+import HashGenerator from "./components/tools/HashGenerator";
+import JavascriptObfuscator from "./components/tools/JavascriptObfuscator";
+import JsonFormatter from "./components/tools/JsonFormatter";
+import TextManipulator from "./components/tools/TextManipulator";
+import URLDecoder from "./components/tools/URLDecoder";
 
 export default function Home() {
     return (
         <div
             id="home"
-            className="max-w-[960px] mt-8 sm:mt-16 flex flex-col space-y-16 items-center justify-center text-center"
+            className="max-w-[1080px] mt-8 sm:mt-16 flex flex-col space-y-16 items-center justify-center text-center"
         >
             <div className="text-6xl sm:text-8xl font-bold leading-tight">
                 <span className="inline-grid">
@@ -83,6 +89,16 @@ export default function Home() {
                 </div>
             </div>
             <div className="h-[1px] w-full bg-gray-700"></div>
+            <div className="w-full flex items-center justify-center flex-wrap gap-16">
+                <Base64Decoder />
+                <HashGenerator />
+                <JavascriptObfuscator />
+                <JsonFormatter />
+                <TextManipulator />
+                <URLDecoder />
+            </div>
+            <div></div>
+            <div></div>
         </div>
     );
 }
