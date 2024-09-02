@@ -14,6 +14,15 @@ const config: Config = {
                     "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
                 "dark-gradient": "linear-gradient(135deg, #821F4A, #30001a)",
             },
+            animation: {
+                marquee: "marquee 30s linear infinite",
+            },
+            keyframes: {
+                marquee: {
+                    "0%": { transform: "translateX(100%)" },
+                    "100%": { transform: "translateX(-100%)" },
+                },
+            },
         },
     },
     plugins: [],

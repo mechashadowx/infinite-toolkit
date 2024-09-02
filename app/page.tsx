@@ -10,12 +10,13 @@ import URLDecoder from "./components/tools/URLDecoder";
 import ClicksTracker from "./components/tools/ClicksTracker";
 import KeypressTracker from "./components/tools/KeypressTracker";
 import PageWordCounter from "./components/tools/PageWordCounter";
+import ToolsMarquee from "./components/views/ToolsMarquee";
 
 export default function Home() {
     return (
         <div
             id="home"
-            className="max-w-[1080px] mt-8 sm:mt-16 flex flex-col space-y-16 items-center justify-center text-center"
+            className="mx-6 max-w-[1080px] mt-8 sm:mt-16 flex flex-col space-y-16 items-center justify-center text-center"
         >
             <div className="text-6xl sm:text-8xl font-bold leading-tight">
                 <span className="inline-grid">
@@ -91,7 +92,9 @@ export default function Home() {
                     </a>
                 </div>
             </div>
-            <div className="h-[1px] w-full bg-gray-700"></div>
+            <div></div>
+            <ToolsMarquee />
+            <div></div>
             <div className="cards w-full flex items-center justify-center flex-wrap gap-16">
                 <Base64Decoder />
                 <ClicksTracker />
