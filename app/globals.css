@@ -6,7 +6,7 @@ body {
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    color: aliceblue;
+    color: #dbdce2;
 }
 
 @keyframes gradientAnimation {
@@ -24,4 +24,8 @@ body {
 .gradient-animation {
     background-size: 200% 200%;
     animation: gradientAnimation 5s ease infinite;
+}
+
+.cards:hover > .card:not(:hover) {
+    filter: blur(2px);
 }

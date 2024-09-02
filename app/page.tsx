@@ -64,7 +64,7 @@ export default function Home() {
                         href="https://chromewebstore.google.com/detail/infinite-toolkit/iocbmkenbdeolfklibfpokdojgffnkdb"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="w-full sm:w-auto px-6 py-3 flex items-center justify-center gap-4 border-2 border-gray-700 hover:bg-[aliceblue] hover:text-gray-700 font-bold rounded-xl transition-all duration-300 text-center transform hover:scale-105"
+                        className="w-full sm:w-auto px-6 py-3 flex items-center justify-center gap-4 border-2 border-gray-700 hover:bg-[#dbdce2] hover:text-gray-700 font-bold rounded-xl transition-all duration-300 text-center transform hover:scale-105"
                     >
                         <FontAwesomeIcon
                             className="h-6 w-6"
@@ -77,7 +77,7 @@ export default function Home() {
                         href="https://addons.mozilla.org/en-US/firefox/addon/infinite-toolkit/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="w-full sm:w-auto px-6 py-3 flex items-center justify-center gap-4 border-2 border-gray-700 hover:bg-[aliceblue] hover:text-gray-700 font-bold rounded-xl transition-all duration-300 text-center transform hover:scale-105"
+                        className="w-full sm:w-auto px-6 py-3 flex items-center justify-center gap-4 border-2 border-gray-700 hover:bg-[#dbdce2] hover:text-gray-700 font-bold rounded-xl transition-all duration-300 text-center transform hover:scale-105"
                     >
                         <FontAwesomeIcon
                             className="h-6 w-6"
@@ -89,7 +89,7 @@ export default function Home() {
                 </div>
             </div>
             <div className="h-[1px] w-full bg-gray-700"></div>
-            <div className="w-full flex items-center justify-center flex-wrap gap-16">
+            <div className="cards w-full flex items-center justify-center flex-wrap gap-16">
                 <Base64Decoder />
                 <HashGenerator />
                 <JavascriptObfuscator />
