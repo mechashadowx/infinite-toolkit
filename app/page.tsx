@@ -7,6 +7,9 @@ import JavascriptObfuscator from "./components/tools/JavascriptObfuscator";
 import JsonFormatter from "./components/tools/JsonFormatter";
 import TextManipulator from "./components/tools/TextManipulator";
 import URLDecoder from "./components/tools/URLDecoder";
+import ClicksTracker from "./components/tools/ClicksTracker";
+import KeypressTracker from "./components/tools/KeypressTracker";
+import PageWordCounter from "./components/tools/PageWordCounter";
 
 export default function Home() {
     return (
@@ -91,9 +94,12 @@ export default function Home() {
             <div className="h-[1px] w-full bg-gray-700"></div>
             <div className="cards w-full flex items-center justify-center flex-wrap gap-16">
                 <Base64Decoder />
+                <ClicksTracker />
                 <HashGenerator />
                 <JavascriptObfuscator />
                 <JsonFormatter />
+                <KeypressTracker />
+                <PageWordCounter />
                 <TextManipulator />
                 <URLDecoder />
             </div>
