@@ -24,9 +24,10 @@ const ColorPaletteGenerator: React.FC = () => {
                     {COLORS.map((color, index) => (
                         <div
                             key={index}
-                            className={`h-16 w-16 shadow-2xl rounded-full border border-gray-700 transition-all duration-200 ${
-                                hovered ? `bg-[${color}]` : "bg-gray-700"
-                            }`}
+                            className="h-16 w-16 shadow-2xl rounded-full border border-gray-700 transition-all duration-200"
+                            style={{
+                                backgroundColor: hovered ? color : "#555555",
+                            }}
                         ></div>
                     ))}
                 </div>
