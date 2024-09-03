@@ -2,6 +2,7 @@ import Base64Decoder from "../tools/Base64Decoder";
 import Clipboard from "../tools/Clipboard";
 import ColorConverter from "../tools/ColorConverter";
 import ColorPaletteGenerator from "../tools/ColorPaletteGenerator";
+import EpochConverter from "../tools/EpochConverter";
 import HashGenerator from "../tools/HashGenerator";
 import JavascriptObfuscator from "../tools/JavascriptObfuscator";
 import JsonFormatter from "../tools/JsonFormatter";
@@ -20,6 +21,7 @@ const Tools: React.FC = () => {
             <Clipboard />
             <ColorConverter />
             <ColorPaletteGenerator />
+            <EpochConverter />
             <HashGenerator />
             <JavascriptObfuscator />
             <JsonFormatter />
