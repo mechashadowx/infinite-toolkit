@@ -3,6 +3,7 @@ import Clipboard from "../tools/Clipboard";
 import ColorConverter from "../tools/ColorConverter";
 import ColorPaletteGenerator from "../tools/ColorPaletteGenerator";
 import EpochConverter from "../tools/EpochConverter";
+import ExactTime from "../tools/ExactTime";
 import HashGenerator from "../tools/HashGenerator";
 import JavascriptObfuscator from "../tools/JavascriptObfuscator";
 import JsonFormatter from "../tools/JsonFormatter";
@@ -22,6 +23,7 @@ const Tools: React.FC = () => {
             <ColorConverter />
             <ColorPaletteGenerator />
             <EpochConverter />
+            <ExactTime />
             <HashGenerator />
             <JavascriptObfuscator />
             <JsonFormatter />
