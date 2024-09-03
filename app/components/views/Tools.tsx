@@ -1,4 +1,5 @@
 import Base64Decoder from "../tools/Base64Decoder";
+import Clipboard from "../tools/Clipboard";
 import HashGenerator from "../tools/HashGenerator";
 import JavascriptObfuscator from "../tools/JavascriptObfuscator";
 import JsonFormatter from "../tools/JsonFormatter";
@@ -14,6 +15,7 @@ const Tools: React.FC = () => {
         <div className="cards w-full flex items-center justify-center flex-wrap gap-16">
             <Base64Decoder />
             <ClicksTracker />
+            <Clipboard />
             <HashGenerator />
             <JavascriptObfuscator />
             <JsonFormatter />

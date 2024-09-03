@@ -65,3 +65,39 @@ body {
 .move-down-up {
     animation: moveDownUp 1s ease-in-out forwards;
 }
+
+@keyframes moveLeftRight {
+    0% {
+        opacity: 0;
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.move-left-right {
+    animation: moveLeftRight 1s ease-in-out forwards;
+}
+
+@keyframes moveRightLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.move-right-left {
+    animation: moveRightLeft 1s ease-in-out forwards;
+}
