@@ -24,30 +24,32 @@ const TextChange: React.FC<TextChangeProps> = ({
             onMouseLeave={() => setHovered(false)}
         >
             <Base title={title} hovered={hovered}>
-                <span className="inline-grid text-lg items-center justify-center">
-                    <span
-                        className={`relative col-start-1 row-start-1 text-center transition-all duration-200 ${
-                            hovered ? "opacity-0" : "opacity-100"
-                        }`}
-                        style={{
-                            wordWrap: "break-word",
-                            wordBreak: "break-word",
-                        }}
-                    >
-                        {text}
+                <div className="overflow-hidden">
+                    <span className="inline-grid text-lg items-center justify-center">
+                        <span
+                            className={`relative col-start-1 row-start-1 text-center transition-all duration-500 transform ${
+                                hovered ? "-translate-x-full" : "translate-x-0"
+                            }`}
+                            style={{
+                                wordWrap: "break-word",
+                                wordBreak: "break-word",
+                            }}
+                        >
+                            {text}
+                        </span>
+                        <span
+                            className={`relative col-start-1 row-start-1 text-center transition-all duration-500 text-gray-700 ${
+                                hovered ? "translate-x-0" : "translate-x-full"
+                            }`}
+                            style={{
+                                wordWrap: "break-word",
+                                wordBreak: "break-word",
+                            }}
+                        >
+                            {hoveredText}
+                        </span>
                     </span>
-                    <span
-                        className={`relative col-start-1 row-start-1 text-center transition-all duration-200 text-gray-700 ${
-                            hovered ? "opacity-100" : "opacity-0"
-                        }`}
-                        style={{
-                            wordWrap: "break-word",
-                            wordBreak: "break-word",
-                        }}
-                    >
-                        {hoveredText}
-                    </span>
-                </span>
+                </div>
             </Base>
         </div>
     );
