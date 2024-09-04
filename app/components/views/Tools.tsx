@@ -17,27 +17,27 @@ import FadeInSection from "../motion/FadeInSection";
 
 const Tools: React.FC = () => {
     const TOOLS = [
-        <Base64Decoder />,
-        <ClicksTracker />,
-        <Clipboard />,
-        <ColorConverter />,
-        <ColorPaletteGenerator />,
-        <EpochConverter />,
-        <ExactTime />,
-        <HashGenerator />,
-        <JavascriptObfuscator />,
-        <JsonFormatter />,
-        <KeypressTracker />,
-        <PageWordCounter />,
-        <TextManipulator />,
-        <URLDecoder />,
+        { id: "base64-decoder", component: <Base64Decoder /> },
+        { id: "clicks-tracker", component: <ClicksTracker /> },
+        { id: "clipboard", component: <Clipboard /> },
+        { id: "color-converter", component: <ColorConverter /> },
+        { id: "color-palette-generator", component: <ColorPaletteGenerator /> },
+        { id: "epoch-converter", component: <EpochConverter /> },
+        { id: "exact-time", component: <ExactTime /> },
+        { id: "hash-generator", component: <HashGenerator /> },
+        { id: "javascript-obfuscator", component: <JavascriptObfuscator /> },
+        { id: "json-formatter", component: <JsonFormatter /> },
+        { id: "keypress-tracker", component: <KeypressTracker /> },
+        { id: "page-word-counter", component: <PageWordCounter /> },
+        { id: "text-manipulator", component: <TextManipulator /> },
+        { id: "url-decoder", component: <URLDecoder /> },
     ];
 
     return (
         <div className="cards w-full flex items-center justify-center flex-wrap gap-16">
-            {TOOLS.map((tool: React.JSX.Element, index: number) => {
-                return <FadeInSection key={index}>{tool}</FadeInSection>;
-            })}
+            {TOOLS.map((tool) => (
+                <FadeInSection key={tool.id}>{tool.component}</FadeInSection>
+            ))}
         </div>
     );
 };
