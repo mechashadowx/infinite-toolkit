@@ -47,7 +47,7 @@ const Options: React.FC = () => {
                     size="2x"
                 />{" "}
                 <span>
-                    Get Premium License -{" "}
+                    Get Premium Version -{" "}
                     <span className="inline-grid font-black">
                         <span className="relative col-start-1 row-start-1 bg-gradient-to-r from-green-400 to-blue-400 text-transparent bg-clip-text blur-xl opacity-90 gradient-animation">
                             $4.99

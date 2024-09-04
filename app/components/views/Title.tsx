@@ -11,7 +11,7 @@ const Title: React.FC = () => {
                     +20
                 </span>
             </span>{" "}
-            Technical Tools in{" "}
+            Tools in{" "}
             <span className="inline-grid">
                 <span className="relative col-start-1 row-start-1 bg-gradient-to-r from-green-400 to-blue-400 text-transparent bg-clip-text blur-xl opacity-90 gradient-animation">
                     One
