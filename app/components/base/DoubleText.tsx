@@ -26,7 +26,7 @@ const DoubleText: React.FC<DoubleTextProps> = ({
             <Base title={title} hovered={hovered}>
                 <div className="h-full w-full flex flex-col items-center justify-center gap-3">
                     <span
-                        className={`relative col-start-1 row-start-1 text-center transition-all duration-200 text-5xl font-bold ${
+                        className={`relative col-start-1 row-start-1 text-center transition-all duration-200 text-5xl font-black ${
                             hovered ? "text-gray-700 move-up-down" : ""
                         }`}
                     >

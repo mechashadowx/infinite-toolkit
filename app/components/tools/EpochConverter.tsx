@@ -27,7 +27,7 @@ const EpochConverter: React.FC = () => {
                         05 - 08 - 2024 20 : 35 : 09
                     </span>
                     <span
-                        className={`relative col-start-1 row-start-1 text-center transition-all duration-200 text-gray-700 font-bold text-3xl ${
+                        className={`relative col-start-1 row-start-1 text-center transition-all duration-200 text-gray-700 font-black text-3xl ${
                             hovered ? "opacity-100" : "opacity-0"
                         }`}
                         style={{
