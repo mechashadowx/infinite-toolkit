@@ -13,24 +13,31 @@ import ClicksTracker from "../tools/ClicksTracker";
 import KeypressTracker from "../tools/KeypressTracker";
 import PageWordCounter from "../tools/PageWordCounter";
 import React from "react";
+import FadeInSection from "../motion/FadeInSection";
 
 const Tools: React.FC = () => {
+    const TOOLS = [
+        <Base64Decoder />,
+        <ClicksTracker />,
+        <Clipboard />,
+        <ColorConverter />,
+        <ColorPaletteGenerator />,
+        <EpochConverter />,
+        <ExactTime />,
+        <HashGenerator />,
+        <JavascriptObfuscator />,
+        <JsonFormatter />,
+        <KeypressTracker />,
+        <PageWordCounter />,
+        <TextManipulator />,
+        <URLDecoder />,
+    ];
+
     return (
         <div className="cards w-full flex items-center justify-center flex-wrap gap-16">
-            <Base64Decoder />
-            <ClicksTracker />
-            <Clipboard />
-            <ColorConverter />
-            <ColorPaletteGenerator />
-            <EpochConverter />
-            <ExactTime />
-            <HashGenerator />
-            <JavascriptObfuscator />
-            <JsonFormatter />
-            <KeypressTracker />
-            <PageWordCounter />
-            <TextManipulator />
-            <URLDecoder />
+            {TOOLS.map((tool: React.JSX.Element, index: number) => {
+                return <FadeInSection key={index}>{tool}</FadeInSection>;
+            })}
         </div>
     );
 };
