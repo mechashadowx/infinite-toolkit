@@ -16,6 +16,7 @@ import React from "react";
 import FadeInSection from "../motion/FadeInSection";
 import EyeDropper from "../tools/EyeDropper";
 import GradientGenerator from "../tools/GradientGenerator";
+import PasswordGenerator from "../tools/PasswordGenerator";
 
 const Tools: React.FC = () => {
     const TOOLS = [
@@ -33,6 +34,7 @@ const Tools: React.FC = () => {
         { id: "json-formatter", component: <JsonFormatter /> },
         { id: "keypress-tracker", component: <KeypressTracker /> },
         { id: "page-word-counter", component: <PageWordCounter /> },
+        { id: "password-generator", component: <PasswordGenerator /> },
         { id: "text-manipulator", component: <TextManipulator /> },
         { id: "url-decoder", component: <URLDecoder /> },
     ];
