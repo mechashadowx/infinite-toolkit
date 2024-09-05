@@ -19,6 +19,7 @@ import GradientGenerator from "../tools/GradientGenerator";
 import PasswordGenerator from "../tools/PasswordGenerator";
 import PasswordStrengthChecker from "../tools/PasswordStrengthChecker";
 import QRGenerator from "../tools/QRGenerator";
+import QuickNote from "../tools/QuickNote";
 
 const Tools: React.FC = () => {
     const TOOLS = [
@@ -42,6 +43,7 @@ const Tools: React.FC = () => {
             component: <PasswordStrengthChecker />,
         },
         { id: "qr-generator", component: <QRGenerator /> },
+        { id: "quick-note", component: <QuickNote /> },
         { id: "text-manipulator", component: <TextManipulator /> },
         { id: "url-decoder", component: <URLDecoder /> },
     ];
