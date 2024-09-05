@@ -14,6 +14,7 @@ import KeypressTracker from "../tools/KeypressTracker";
 import PageWordCounter from "../tools/PageWordCounter";
 import React from "react";
 import FadeInSection from "../motion/FadeInSection";
+import EyeDropper from "../tools/EyeDropper";
 
 const Tools: React.FC = () => {
     const TOOLS = [
@@ -24,6 +25,7 @@ const Tools: React.FC = () => {
         { id: "color-palette-generator", component: <ColorPaletteGenerator /> },
         { id: "epoch-converter", component: <EpochConverter /> },
         { id: "exact-time", component: <ExactTime /> },
+        { id: "eye-dropper", component: <EyeDropper /> },
         { id: "hash-generator", component: <HashGenerator /> },
         { id: "javascript-obfuscator", component: <JavascriptObfuscator /> },
         { id: "json-formatter", component: <JsonFormatter /> },
