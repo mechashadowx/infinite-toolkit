@@ -39,7 +39,7 @@ const PasswordGenerator: React.FC = () => {
                                 />
                             </span>
                             <span
-                                className={`relative col-start-1 row-start-1 text-center transition-all duration-[] text-gray-700 font-black text-3xl ${
+                                className={`relative col-start-1 row-start-1 text-center transition-all text-gray-700 font-black text-3xl ${
                                     hovered
                                         ? "opacity-100 " +
                                           (index % 2 == 0
