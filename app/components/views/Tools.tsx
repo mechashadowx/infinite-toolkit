@@ -18,6 +18,7 @@ import EyeDropper from "../tools/EyeDropper";
 import GradientGenerator from "../tools/GradientGenerator";
 import PasswordGenerator from "../tools/PasswordGenerator";
 import PasswordStrengthChecker from "../tools/PasswordStrengthChecker";
+import QRGenerator from "../tools/QRGenerator";
 
 const Tools: React.FC = () => {
     const TOOLS = [
@@ -40,6 +41,7 @@ const Tools: React.FC = () => {
             id: "password-strength-checker",
             component: <PasswordStrengthChecker />,
         },
+        { id: "qr-generator", component: <QRGenerator /> },
         { id: "text-manipulator", component: <TextManipulator /> },
         { id: "url-decoder", component: <URLDecoder /> },
     ];
