@@ -20,6 +20,7 @@ import PasswordGenerator from "../tools/PasswordGenerator";
 import PasswordStrengthChecker from "../tools/PasswordStrengthChecker";
 import QRGenerator from "../tools/QRGenerator";
 import QuickNote from "../tools/QuickNote";
+import RegExTester from "../tools/RegExTester";
 
 const Tools: React.FC = () => {
     const TOOLS = [
@@ -44,6 +45,7 @@ const Tools: React.FC = () => {
         },
         { id: "qr-generator", component: <QRGenerator /> },
         { id: "quick-note", component: <QuickNote /> },
+        { id: "regex-tester", component: <RegExTester /> },
         { id: "text-manipulator", component: <TextManipulator /> },
         { id: "url-decoder", component: <URLDecoder /> },
     ];
