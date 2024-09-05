@@ -21,6 +21,7 @@ import PasswordStrengthChecker from "../tools/PasswordStrengthChecker";
 import QRGenerator from "../tools/QRGenerator";
 import QuickNote from "../tools/QuickNote";
 import RegExTester from "../tools/RegExTester";
+import UUIDGenerator from "../tools/UUIDGenerator";
 
 const Tools: React.FC = () => {
     const TOOLS = [
@@ -48,6 +49,7 @@ const Tools: React.FC = () => {
         { id: "regex-tester", component: <RegExTester /> },
         { id: "text-manipulator", component: <TextManipulator /> },
         { id: "url-decoder", component: <URLDecoder /> },
+        { id: "uuid-generator", component: <UUIDGenerator /> },
     ];
 
     return (
